@@ -117,16 +117,17 @@ li a{
         background-color: #fff;
         transition: 0.2s all ease;
     }
-    // .header.plus .fa-basket-shopping{
-    //     display: none;
-    // }
+    .header.plus .fa-basket-shopping{
+        display: none;
+    }
     .header.plus li::before{
         background-color: #fff;
         height: 2px;
     }
 }
-.fa-basket-shopping.myClass {
-    color: #fff; /* меняем цвет фона блока на красный */
+.header.plus .fa-basket-shopping.myClass {
+    color: #fff; /* меняем цвет фона блока на белый */
+    display: block;
   }
 
 
