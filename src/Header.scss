@@ -63,13 +63,19 @@ li:hover::before{
 }
 .header__burger{
     position: absolute;
-    left: 20px;
+    left: 50px;
     top: 20px;
     width: 40px;
     height: 40px;
     border: none;
     background-color: transparent;
     display: none;
+}
+@media screen and (max-width:450px) {
+    .header__burger{
+        position: absolute;
+        left: 20px;
+    }
 }
 .header__burger span{
     position: absolute;
@@ -128,7 +134,7 @@ li a{
 .fa-basket-shopping.myClass {
     color: #fff; /* меняем цвет фона блока на белый */
   }
-.header .fa-basket-shopping.myClass{
+.header.plus .fa-basket-shopping.myClass{
     display: block;
 }
 
