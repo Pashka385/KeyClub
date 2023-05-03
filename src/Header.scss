@@ -125,10 +125,12 @@ li a{
         height: 2px;
     }
 }
-.header.plus .fa-basket-shopping.myClass {
+.fa-basket-shopping.myClass {
     color: #fff; /* меняем цвет фона блока на белый */
-    display: block;
   }
+.header.plus .fa-basket-shopping.myClass{
+    display: block;
+}
 
 
 
