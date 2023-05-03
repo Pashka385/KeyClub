@@ -1,0 +1,66 @@
+// СОздание каталога товаров
+const CATALOG = [
+  {
+    id: "el1",
+    name: "White",
+    img: "./img/345.png",
+    price: "300",
+    filter: "middle",
+  },
+  {
+    id: "el1",
+    name: "White",
+    img: "./img/345.png",
+    price: "300",
+    filter: "middle",
+  },
+  {
+    id: "el1",
+    name: "White",
+    img: "./img/345.png",
+    price: "300",
+    filter: "middle",
+  },
+  {
+    id: "el2",
+    name: "Black",
+    img: "./img/345.png",
+    price: "500",
+    filter: "rich",
+  },
+  {
+    id: "el2",
+    name: "Black",
+    img: "./img/345.png",
+    price: "500",
+    filter: "rich",
+  },
+  {
+    id: "el2",
+    name: "Black",
+    img: "./img/345.png",
+    price: "500",
+    filter: "rich",
+  },
+  {
+    id: "el3",
+    name: "Blue",
+    img: "./img/345.png",
+    price: "100",
+    filter: "chip",
+  },
+  {
+    id: "el3",
+    name: "Blue",
+    img: "./img/345.png",
+    price: "100",
+    filter: "chip",
+  },
+  {
+    id: "el3",
+    name: "Blue",
+    img: "./img/345.png",
+    price: "100",
+    filter: "chip",
+  },
+];

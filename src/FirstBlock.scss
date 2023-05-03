@@ -1,0 +1,68 @@
+.FirstBlock__container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.FirstBlock__image{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+.css-1j8o68f{
+    width: 450px;
+    height: 450px;
+}
+}
+.FirstBlock__mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.074);
+}
+.ScrolDown {
+    width: 100%;
+    min-height:7vh;
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.fa-sun{
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    z-index: 10;
+    animation-duration: 1s;
+}
+.fa-sun:hover{
+    animation-name: sun;
+    transition: 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes sun{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(1000deg);}
+}
+
+@media screen and (max-width:550px) {
+        .css-1j8o68f{
+        height: 400px;
+        width: 400px;
+    }
+}
+@media screen and (max-width:375px) {
+    .css-1j8o68f{
+    height: 350px;
+    width: 350px;
+}
+}
+
