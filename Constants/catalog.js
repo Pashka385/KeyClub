@@ -6,6 +6,7 @@ const CATALOG = [
     img: "./img/345.png",
     price: "300",
     filter: "middle",
+    text:"Sure, here you go:The serene sunset painted the sky with hues of orange and pink, creating a breathtaking view.",
   },
   {
     id: "el1",
@@ -13,6 +14,7 @@ const CATALOG = [
     img: "./img/345.png",
     price: "300",
     filter: "middle",
+    text:"Sure, here you go:The serene sunset painted the sky with hues of orange and pink, creating a breathtaking view.",
   },
   {
     id: "el1",
@@ -20,6 +22,7 @@ const CATALOG = [
     img: "./img/345.png",
     price: "300",
     filter: "middle",
+    text:"Sure, here you go:The serene sunset painted the sky with hues of orange and pink, creating a breathtaking view.",
   },
   {
     id: "el2",
@@ -27,6 +30,7 @@ const CATALOG = [
     img: "./img/345.png",
     price: "500",
     filter: "rich",
+    text:"Sure, here you go:The serene sunset painted the sky with hues of orange and pink, creating a breathtaking view.",
   },
   {
     id: "el2",
@@ -34,6 +38,7 @@ const CATALOG = [
     img: "./img/345.png",
     price: "500",
     filter: "rich",
+    text:"Sure, here you go:The serene sunset painted the sky with hues of orange and pink, creating a breathtaking view.",
   },
   {
     id: "el2",
@@ -41,6 +46,7 @@ const CATALOG = [
     img: "./img/345.png",
     price: "500",
     filter: "rich",
+    text:"Sure, here you go:The serene sunset painted the sky with hues of orange and pink, creating a breathtaking view.",
   },
   {
     id: "el3",
@@ -48,6 +54,7 @@ const CATALOG = [
     img: "./img/345.png",
     price: "100",
     filter: "chip",
+    text:"Sure, here you go:The serene sunset painted the sky with hues of orange and pink, creating a breathtaking view.",
   },
   {
     id: "el3",
@@ -55,6 +62,7 @@ const CATALOG = [
     img: "./img/345.png",
     price: "100",
     filter: "chip",
+    text:"Sure, here you go:The serene sunset painted the sky with hues of orange and pink, creating a breathtaking view.",
   },
   {
     id: "el3",
@@ -62,5 +70,6 @@ const CATALOG = [
     img: "./img/345.png",
     price: "100",
     filter: "chip",
+    text:"Sure, here you go:The serene sunset painted the sky with hues of orange and pink, creating a breathtaking view.",
   },
 ];

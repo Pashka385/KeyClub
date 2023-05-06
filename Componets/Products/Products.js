@@ -4,10 +4,10 @@ class Products {
     // Содание переменной для хранения данных из эллементов li
     let HtmlCatalog = "";
     // Перебор всех эллементов переменной Catalog
-    CATALOG.forEach(({ name, img, price, filter, id }) => {
+    CATALOG.forEach(({ name, img, price, filter, id,text }) => {
       // Добавление данных
       HtmlCatalog += `
-            <li class='list__item ${filter}' data-path=''>
+            <li onclick = "openModal('${name}', '${img}', '${text}')", class='list__item ${filter}' data-path=''>
             <div class='box1'></div>
             <div class='box2'></div>
                 <div class='item__up'></div>
@@ -28,8 +28,7 @@ class Products {
         <li data-f = 'all'>Все</li>
         <li data-f = 'rich'>Дорогие</li>
         <li data-f = 'chip'>Дешевые</li>
-        <li data-f = 'middle'>Среднии</li>
-     
+        <li data-f = 'middle'>Средние</li>
       </ul>
     </div>
         <ul class = 'ul__list' id='ul__list'>
@@ -41,7 +40,7 @@ class Products {
 }
 // Создание экземпляра для запуска
 const productPage = new Products();
-// Вывод экземпляра
+// Вывод экземпляр
 productPage.render();
 // Фильтрация
 const FilterBox = document.querySelectorAll(".list__item"); //получаем экземпляры списка ul
@@ -66,14 +65,43 @@ function loadBlocks() {
     }
   });
 }
-
+let ReadModal = `
+  <div class='modal__content'>
+      <div id='modal__close' class='modal__close'>&#10006</div>
+      <div id='modal__title' class='modal__title'><p></p></div>
+      <div id='modal__image' class='modal__image'><img src=''></div>
+      <div id='modal__text' class='modal__text'><p></p></div>
+      <div class='modal__price' id='modal__price'></div>
+  </div>
+`
+RootModal.innerHTML = ReadModal;
 window.addEventListener("scroll", loadBlocks); // добавляем обработчик события прокрутки
-
 loadBlocks(); // вызываем функцию при загрузке страницы для подгрузки блоков, которые уже находятся в видимой области
 
-const res = document.querySelectorAll('.act');
-res.forEach(item => {
-  item.addEventListener('click', () => {
-    item.classList.toggle('active')
+const OpenProjectPopUp = document.querySelectorAll(".item__image");
+const CloseProjectPopUp = document.getElementById("modal__close");
+const PopUpProject = document.getElementById("modal");
+
+
+OpenProjectPopUp.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (item.classList.contains("item__image")) {
+      PopUpProject.classList.toggle("active");
+      document.body.style.overflow = "hidden";
+    }
   });
 });
+CloseProjectPopUp.addEventListener("click", () => {
+  PopUpProject.classList.remove("active");
+  document.body.style.overflow = "auto";
+});
+
+function openModal(name, img, text) {
+  const ModalTitle = document.getElementById("modal__title");
+  const ModalImage = document.getElementById("modal__image");
+  const Modaltext = document.getElementById("modal__text");
+  ModalTitle.innerHTML = name;
+  ModalImage.innerHTML = `<img src='${img}'>`;
+  Modaltext.innerHTML = text;
+}

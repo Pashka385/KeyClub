@@ -4,3 +4,4 @@ const RootBag = document.getElementById("Bag");
 const RootFirst__block = document.getElementById("first__block");
 const RootHeader = document.getElementById("header");
 const RootFooter = document.getElementById("Footer");
+const RootModal = document.getElementById("modal");

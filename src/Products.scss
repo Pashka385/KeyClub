@@ -132,6 +132,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 20;
 img{
     position: absolute;
     width: 80%;
@@ -151,9 +152,6 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     transition: 0.2s all ease;
-}
-.iteem__btn.active{
-    background-color: grey;
 }
 .iteem__btn:hover{
     box-shadow:0px 0px 0px 0px ;
