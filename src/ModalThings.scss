@@ -16,7 +16,7 @@
 }
 .modal__content{
     width: 60%;
-    min-height: 70vh;
+    min-height: 50vh;
     background-color: #201e1e;
     z-index: 15;
     position: relative;
@@ -55,7 +55,7 @@
     display: block;
     width: 70%;
     min-height: 50px;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 5px 10px 5px;
 }
 @media screen and (max-width:600px) {
     .modal__text{
