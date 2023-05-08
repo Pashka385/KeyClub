@@ -28,11 +28,15 @@ const PlusFunstion = (id) => {
 const renderShop = () => {
   const x = document.querySelector(".content");
   let html = "";
+  let resPrice = 0;
   for (const key in shop) {
-    if (shop[key].count>0){
-      html += `<p>${shop[key].name}: ${shop[key].count+" единиц Цена"} :${shop[key].price * (shop[key].count)+"RUB"}</p>`;
+    if (shop[key].count > 0) {
+      resPrice += shop[key].price * shop[key].count;
+      html += `<p>${shop[key].name}: кол-во (${shop[key].count}), ${shop[key].price * shop[key].count}RUB</p>`;
     }
   }
+  html += `<p>Итог: ${resPrice} RUB</p>`;
   x.innerHTML = html;
 };
+
 renderShop();

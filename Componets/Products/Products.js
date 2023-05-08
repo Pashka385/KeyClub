@@ -105,3 +105,4 @@ function openModal(name, img, text) {
   ModalImage.innerHTML = `<img src='${img}'>`;
   Modaltext.innerHTML = text;
 }
+

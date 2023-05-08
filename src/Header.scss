@@ -55,6 +55,16 @@ li:hover::before{
 .fa-basket-shopping{
     font-size: 30px;
 }
+.fa-basket-shopping.active{
+    animation-name: ActivBag;
+    animation-duration: 0.3s ;
+}
+@keyframes ActivBag{
+    0%{transform: rotate(0deg);}
+    30%{transform: rotate(20deg);}
+    60%{transform: rotate(-20deg);}
+    100%{transform: rotate(0deg);}
+}
 .shop{
     position: fixed;
     right: 20px;

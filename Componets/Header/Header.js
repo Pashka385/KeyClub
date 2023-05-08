@@ -54,6 +54,7 @@ const closePopUp = document.getElementById("pop_up_close");
 const PopUp = document.getElementById("pop_up");
 
 openPopUp.addEventListener("click", (e) => {
+  alert("Для покупки скопируйте данные из корзины");
   e.preventDefault();
   PopUp.classList.add("active");
   document.body.style.overflow = "hidden";
@@ -68,3 +69,12 @@ const BuyLink = document.querySelector('.buy__link');
 BuyLink.addEventListener('click',()=>{
   window.open("https://vk.me/pank_ne_umer","","toolbar=no,scrollbars=yes,width=500, height=500, resizable=yes, top=100, left=500")
 })
+
+
+const asd = document.querySelectorAll(".iteem__btn");
+const sd = document.querySelector(".fa-basket-shopping"); 
+asd.forEach((item) => {
+  item.addEventListener("click", () => {
+      sd.classList.add("active"); 
+  });
+});
