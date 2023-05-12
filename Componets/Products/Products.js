@@ -70,7 +70,7 @@ let ReadModal = `
   <div class='modal__content'>
       <div id='modal__close' class='modal__close'>&#10006</div>
       <div id='modal__title' class='modal__title'><p></p></div>
-      <div id='modal__image' class='modal__image'><img src=''></div>
+      <div id='modal__image' class='modal__image'><img src='' alt="image"></div>
       <div id='modal__text' class='modal__text'><p></p></div>
       <div class='modal__price' id='modal__price'></div>
   </div>
