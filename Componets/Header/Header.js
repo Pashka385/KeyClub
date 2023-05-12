@@ -10,10 +10,6 @@ let HtmlHeader = `
         <li><a href='https://vk.com/pank_ne_umer'>Вконтакте</a></li>
         <li><a href='https://vk.me/pank_ne_umer'>Связь</a></li>
         <li><a href='#Products'>Товары</a></li>
-        <li><a href='https://vk.com/pank_ne_umer'>Вконтакте</a></li>
-        <li><a href='https://vk.me/pank_ne_umer'>Связь</a></li>
-        
-        
     </ul>
 </div>
 <div class='shop open_pop_up' id='open_pop_up'>
