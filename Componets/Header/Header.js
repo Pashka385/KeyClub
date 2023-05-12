@@ -6,7 +6,6 @@ let HtmlHeader = `
 </button> 
 <div class='header__container'>
     <ul class='header__list'>
-        <li><a href='#Products'>Товары</a></li>
         <li><a href='https://vk.com/pank_ne_umer'>Вконтакте</a></li>
         <li><a href='https://vk.me/pank_ne_umer'>Связь</a></li>
         <li><a href='#Products'>Товары</a></li>
