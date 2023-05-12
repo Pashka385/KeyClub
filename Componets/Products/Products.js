@@ -21,6 +21,7 @@ class Products {
             </li>
             `;
     });
+    // При клике на кнопку передаются данные из эллемента
     // Добавление эллементов li в Ul лист
     const html = `
     <div class='list'>
@@ -73,8 +74,8 @@ let ReadModal = `
       <div id='modal__text' class='modal__text'><p></p></div>
       <div class='modal__price' id='modal__price'></div>
   </div>
-`
-RootModal.innerHTML = ReadModal;
+` // Создаём модалное окно с динмической генирацией обьектов
+RootModal.innerHTML = ReadModal; // Добавляем его к узлу
 window.addEventListener("scroll", loadBlocks); // добавляем обработчик события прокрутки
 loadBlocks(); // вызываем функцию при загрузке страницы для подгрузки блоков, которые уже находятся в видимой области
 
@@ -83,25 +84,25 @@ const CloseProjectPopUp = document.getElementById("modal__close");
 const PopUpProject = document.getElementById("modal");
 
 
-OpenProjectPopUp.forEach((item) => {
+OpenProjectPopUp.forEach((item) => { // Перебираем все эллементы с таким классом и добавлем ему событие на клик
   item.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (item.classList.contains("item__image")) {
+    e.preventDefault(); // Удаяем базовые функции браузера
+    if (item.classList.contains("item__image")) { // если клик будет происходить по картинке то окно становится видным
       PopUpProject.classList.toggle("active");
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden"; // активному попапу удаляем скрол
     }
   });
 });
 CloseProjectPopUp.addEventListener("click", () => {
   PopUpProject.classList.remove("active");
-  document.body.style.overflow = "auto";
+  document.body.style.overflow = "auto"; 
 });
 
-function openModal(name, img, text) {
+function openModal(name, img, text) { // Функция получает данные от кнопки
   const ModalTitle = document.getElementById("modal__title");
   const ModalImage = document.getElementById("modal__image");
   const Modaltext = document.getElementById("modal__text");
-  ModalTitle.innerHTML = name;
+  ModalTitle.innerHTML = name; // Вставляем информаию в модальное окно
   ModalImage.innerHTML = `<img src='${img}'>`;
   Modaltext.innerHTML = text;
 }
